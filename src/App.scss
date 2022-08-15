@@ -1,0 +1,46 @@
+@import "assets/Sass/colors.scss";
+@import "assets/Sass/Font.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SinkinSans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: $primary-color;
+}
+
+.container {
+    margin: 0rem 2.5rem;
+}
+
+.switch {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1.25rem;
+    left: 40rem;
+    background-color: $secondary-color;
+}
+
+#light .switch {
+    background-color: $light-mode__color;
+}
+#dark .switch label {
+    color: $font-primary;
+}
+#light .switch label {
+    color: $light-secondary__font;
+}
+
+label {
+    padding: 0rem 0.1875rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
